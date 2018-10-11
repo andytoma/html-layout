@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forme</title>
+  </head>
+
+  <body>
+    <form action="formdata.php" method="post" name="form1">
+    <fieldset>
+    <legend>Introducerea datelor personale</legend>
+    <p><label>Introduceti numele dm.(maz. 10 simboluri)<input type="text" name="name" size="30" maxlength="10"></label></p>
+    <p><label>Introduceti parola dm.(maz. 10 simboluri)<input type="password" name="name" size="30" maxlength="10" ></label></p>
+    </fieldset>
+    <fieldset>
+    <legend>Intrebri</legend>
+    <p>Doriti sa economisiti ceva timp?</p>
+    <p><label>DA<input type="radio" name="time" value="Yes" checked></label> <label>NU<input type="radio" name="time" value="NO"></label></p>
+
+    <p>cu ce anume va folositi pt a economisi timpul dmv</p>
+    <p>
+      <input type="checkbox" name="ez" disabled >Bloncnot</input>
+      <input type="checkbox" name="es" checked>Telefon</input>
+      <input type="checkbox" name="ee">Calculator</input>
+    </p>
+
+    <p><label for="sleep">Cite ore dormiti pe zi?</label></p>
+    <p>
+      <select name="aleep" id="sleep">
+        <option>5</option>
+        <option>6</option>
+        <option value="seven">7</option>
+        <option selected>8</option>
+        <option>8+</option>
+      </select>
+    </p>
+    </fieldset>
+    <p><label for="text"> поделитесь своими результатами</label></p>
+    <textarea name="text" cols="50" rows="4" id="text" >Scrieti ceva</textarea>
+
+    <p><input type="reset" name="reset" value="Sterge"> <input type="submit" name="submit" value="Trimite"></p>
+    <p><input type="image" src="Images/ibutton.png" name="imagebutton" ></p>
+    <p><input type="button" value="buton" name="buton"></p>
+    </form>
+
+
+  </body>
+</html>
