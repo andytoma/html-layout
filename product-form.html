@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> product-form</title>
+  </head>
+  <body>
+    <!-- facebook -->
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- facebook -->
+
+    <table align="center" cellpadding="20">
+      <tr>
+        <td colspan="2" bgcolor="#DDD">
+          <form action="https://www.straus.md/en/">
+            <input type="text" size="50" placeholder="Search" autofocus name="query" list="optiuni" >
+            <datalist id="optiuni">
+              <option value="pizza">
+              <option value="burgher">
+              <option value="kebab">
+              <option value="salat">
+            </datalist>
+            <button>Search</button>
+
+          </form>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="https://straus.s3.amazonaws.com/media/products2/add5360b9cc64191bd55108d23c30d14_big.jpg?version=1529058593" alt="Burgernaya" />
+          <marquee>
+          <h3>TAIEM PRETURILE!! reduceri -99%</h3>
+        </marquee>
+        </td>
+
+        <td bgcolor="#CBA">
+
+          <form>
+            <h1>Menu chicken roll</h1>
+            <hr color="00FF7F">
+            <h2>Ingrediens</h2>
+            <ol type="a">
+              <li>Pita</li>
+              <li>Chicken breast pane</li>
+              <li>Vegetables</li>
+              <li>French fries</li>
+              <li>Sauce</li>
+            </ol>
+            <p> <small><b>Delivery from <a href="https://www.straus.md/en/restaurant/burgernaya-no-1/">Burgernaya №1 </a>in Chisinau</b></small>
+            <br>
+            <small>Mass: 305/150/330 gr</small>
+            <br>
+            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+            <br>
+            <label>Portii:
+                <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                </select>
+            </label>
+            <label>Tacimuri
+              <input type="checkbox">
+            </label>
+            </p>
+            <h3 align="center">67 mdl</h3>
+            <p align="center"> <button type="button" name="button">&#10003;ADO</button>
+            </P>
+          </form>
+
+        </td>
+
+      </tr>
+
+    </table>
+
+  </body>
+</html>
