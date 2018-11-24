@@ -1,62 +1,91 @@
 body{
-  font-family:arial;
+  background-color: #5415;
+  font-family: arial;
 }
 #main{
+  padding: 20px;
+  color: white;
   background-color: #272727;
-  padding: 20px 80px 20px 80px ;
   height: 60px;
+  padding: 20px 80px 20px 80px;
 }
 #main .nav-left{
   float: left;
   width: 60%;
-  border-right: 1px solid #7e7e7e;
-  margin-right: -1px;
+  border-right: 1px solid #7E7E7e;
+
 }
 #main .nav-right{
   float: right;
   width: 40%;
+  font-size: 25px;
+  margin-left: -1px;
 }
-#main li{
+#main .nav-left li{
   float: left;
 }
-#main li:last-child{
+#main .nav-left li:last-child{
   float: right;
+  margin-right: 60px;
+}
+#main .nav-right li{
+  float: left;
+  margin-left: 20px;
 }
 #main .nav-right li:first-child{
-  margin-left: 80px;
+  margin-left: 60px;
 }
-#main .nav-left li:last-child{
-  margin-right: 80px;
+#main .nav-right li:last-child{
+  float: right;
 }
 #main .nav-left li:last-child,
 #main .nav-right li{
-  padding-top: 8px;
+  margin-top: 10px;
 }
 #main .nav-right li{
-    font-size: 20px;
+  margin-top: 5px;
 }
-#main .logo{
-  border: 3px solid white;
-  width: 20px;
-  height: 20px;
+.text-night{
+  color: #7E7E7E;
+}
+#main .nav-left .logo{
   float: left;
   margin-right: 15px;
 }
 #main h3{
-  float: left;
-}
-#main .nav-left li:first-child {
   width: 200px;
+  font-size:20px;
 }
-#main a{
-  color: #fff;
+#main img{
+  width: 40px;
+  height: 40px;
 }
-.text-night{
+#main .nav-right a:link{
+  color: white;
+}
+#main .nav-right a:visited{
+  color: white;
+}
+#main .nav-right a:hover{
+  color: #CBFF0F;
+}
+#main .nav-left a:link{
+  color: white;
+}
+#main .nav-left a:visited{
+  color: white;
+}
+#main .nav-left a:hover{
+  color: #white;
+}#main .nav-left a.call:link{
   color: #7e7e7e;
 }
-#main .slash{
-  color: #272727;
-  margin-left: -5px;
-  font-size: 25px;
-  font-weight: bold;
+#main .nav-left a.call:visited{
+  color: white;
+}
+#main .nav-left a.call:hover{
+  color: #white;
+}
+a{
+  text-decoration: none;
 }
