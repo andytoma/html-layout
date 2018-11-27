@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style media="screen">
+    div{
+      width: 100px;
+      height: 100px;
+    }
+    #d1{
+      background-color: #541;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 0;
+    }
+    #d2{
+      background-color: #875;
+      position: absolute;
+      /*bottom: 0;*/
+      left: 50px;
+      top: 50px;
+      z-index: -1;
+    }
+    #d3{
+      background-color: #312;
+      position: absolute;
+      left: 100px;
+      top: 100px;
+      z-index: -2;
+
+    }
+    body{
+      height: 3000px;
+    }
+  </style>
+</head>
+<body>
+  <!-- #d1+#d2+#d3 -->
+  <div id="d1">1</div>
+  <div id="d2">2</div>
+  <div id="d3">3</div>
+
+</body>
+</html>

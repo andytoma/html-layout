@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style media="screen">
+    div{
+      width: 100px;
+      height: 100px;
+    }
+    #d1{
+      background-color: #541;
+    }
+    #d2{
+      background-color: #875;
+      position: relative;
+      top: 50px;
+      left: 50px;
+      z-index: -100;
+    }
+    #d3{
+      background-color: #312;
+    }
+  </style>
+</head>
+<body>
+  <!-- #d1+#d2+#d3 -->
+  <div id="d1">1</div>
+  <div id="d2">2</div>
+  <div id="d3">3</div>
+
+</body>
+</html>
