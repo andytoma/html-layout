@@ -19,17 +19,24 @@
       position: relative;
       top: 100px;
     }
+    #preloader .square{
+      width: 30px;
+      height: 30px;
+      border: 3px solid #2c3e50;
+      position: absolute;
+      left: 80px;
+      animation: square-animation 2s infinite linear;
+    }
     #preloader .curve-dark{
       background-color: inherit;
       width: 300px;
       height: 100px;
-      opacity: 0.5;
       border-radius: 50%;
       position: absolute;
       top: -13px;
       left: -50px;
       transform-origin: 50% 13px;
-      /*animation: dark-animation 5s infinite;*/
+      animation: dark-animation 2s cubic-bezier(.3,1.88,.98,.38) infinite;
     }
     #preloader .curve-light{
       background-color: white;
@@ -40,16 +47,27 @@
       top: -87px;
       left: -50px;
       transform-origin: 50% 87px;
-      /*animation: light-animation 5s infinite;*/
+      animation: light-animation 2s cubic-bezier(.3,1.88,.98,.38) infinite;
     }
+
   @keyframes dark-animation{
-    from{transform: scaleY(0.0);}
-    to{transform: scaleY(1.0);}
+    0%{transform: scaleY(0);}
+    25%{transform: scaleY(1);}
+    50%{transform: scaleY(0);}
+    100%{transform: scaleY(0);}
   }
   @keyframes light-animation{
-    from{transform: scaleY(0.0);}
-    to{transform: scaleY(1.0);}
+    0%{transform: scaleY(0);}
+    50%{transform: scaleY(0);}
+    75%{transform: scaleY(1);}
+    100%{transform: scaleY(0);}
   }
+  @keyframes square-animation{
+    0%{top: 20px; transform:rotate(0deg);}
+    50%{top: -80px; transform:rotate(-180deg);}
+    100%{top:20px;transform:rotate(-360deg);}
+  }
+  @keyframes
   </style>
 </head>
 <body>
