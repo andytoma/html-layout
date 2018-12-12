@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--                ceas                -->
+  <div id="left" class="screen">
+    <h1><p id="date"></p></h1>
+    <script>
+      var myVar = setInterval(myTimer,1000);
+      function myTimer(){
+        var d = new Date();
+        document.getElementById("date").innerHTML = d.toLocaleTimeString();
+      }
+    </script>
+    <!--                ceas             -->
+
+    <div class="circle">
+      <p>0 sms receive</p>
+    </div>
+    <div class="loader">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <ul class="orange">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div id="right" class="screen"></div>
+
+
+</body>
+</html>
