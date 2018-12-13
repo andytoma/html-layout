@@ -16,8 +16,12 @@ nav li{
 nav li a{
   border-right: 1px solid #78b1eb;
   color: #78b1eb;
-  padding: 12px 42px;
+  padding: 12px 56px;
   display: block;
+
+}
+nav li:nth-child(9) a{
+  border-right: none;
 }
 a:hover{
   background-color: #356da5;
@@ -30,6 +34,8 @@ nav .burger a{
 }
 .burger{
   float: right;
+  display: none;
+
 }
 .burger span{
   background-color: white;
@@ -67,4 +73,20 @@ nav .burger a::before{
   top: 28px;
   border: 2px solid white;
   line-height: 110%;
+}
+
+/*           stiluri pentru mobile          */
+
+@media screen and (max-width:800px) {
+nav .burger{
+  display: block;
+}
+nav li:nth-child(9),
+nav li:nth-child(8),
+nav li:nth-child(7),
+nav li:nth-child(6),
+nav li:nth-child(5){
+  display: none;
+}
+
 }
