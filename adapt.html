@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Exemple of css3 MEDIA Queries</title>
+    <style>
+    /*            stiluri desktop       */
+      body{
+        background-color: #999;
+        margin: 0;
+        font-family: arial;
+      }
+      header{
+        background-color: #333;
+        padding: 50px;
+        text-align: center;
+        color: white;
+      }
+      h1{
+        margin: 0;
+      }
+      section{
+        background-color: orange;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        margin: auto;
+        text-align: center;
+        line-height: 500px;
+      }
+      footer{
+        background-color: #222;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        box-sizing: border-box;
+      }
+      footer a{
+        color: #777;
+        text-decoration: none;
+        margin: 20px;
+      }
+      /*             stiluri mobile            */
+      @media screen  and (max-width:540px) {
+
+          section{
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            
+          }
+          footer a{
+            display: block;
+          }
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hello css3 MEDIA</h1>
+    </header>
+    <section>
+
+        <h2>
+          COOL :)
+          <small>
+            I like that!
+          </small>
+        </h2>
+
+    </section>
+    <footer>
+      <!-- a*5>lorem1 -->
+      <a href="">Lorem.</a>
+      <a href="">Perferendis?</a>
+      <a href="">Voluptatum?</a>
+      <a href="">Cumque.</a>
+      <a href="">Non.</a>
+    </footer>
+  </body>
+</html>
