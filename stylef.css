@@ -1,6 +1,7 @@
 body{
   font-family: 'Nunito', sans-serif;
   color: #444;
+  height: 10000px;
 }
 
 .container{
@@ -50,5 +51,48 @@ form{
   display: none;
 }
 .form-element input[type="checkbox"]:checked+.fa-star{
-  display: inline;;
+  display: inline;
+}
+
+.fa.fa-fax{
+  color: #075BF8;
+  font-size: 50px;
+}
+.fa.fa-users{
+  color: #19CAE8;
+  font-size: 50px;
+}
+.fa.fa-globe{
+  color: #FF0053;
+  font-size: 50px;
+}
+#benefits{
+  display: flex;
+  justify-content: space-between;
+}
+
+.line{
+  width: 100%;
+  background-color: #ccc;
+  height: 300px;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  transform: skewY(5deg);
+}
+.icon1{
+  position: relative;
+  top: -80px;
+}
+.icon3{
+  position: relative;
+  top: 80px;
+}
+.fa.fa-angle-up{
+  font-size: 40px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50% ;
+  background-color: green;
 }
