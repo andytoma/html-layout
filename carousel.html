@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
+  <title>Exemplu cu carousel</title>
+  <style media="screen">
+    body{
+      background-color: #333;
+    }
+    .owl-dot{
+      width: 15px;
+      height: 15px;
+      background-color: #fff !important;
+      border-radius: 50%;
+      margin: 10px;
+    }
+    .owl-dot.active{
+      background-color: red!important;
+    }
+    h2{
+      position: absolute;
+      margin-left:40%;
+      text-align: center;
+      top: 40%;
+      }
+  </style>
+</head>
+<body>
+
+  <h1>Carousel</h1>
+
+  <div class="owl-carousel">
+    <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/900/300?img=90" alt="" /> </div>
+    <div><h2>Lorem ipsum.</h2> <img src="https://picsum.photos/900/300?img=99" alt="" /> </div>
+    <div><h2>Lorem ipsum dolor sit.</h2> <img src="https://picsum.photos/900/300?img=919" alt="" /></div>
+    <div><h2>Lorem ipsum dolor sit amet, consectetur.</h2> <img src="https://picsum.photos/900/300?img=9109" alt="" /></div>
+
+  </div>
+
+  <div class="sl-carousel">
+    <div> <h2>Lorem ipsum dolor.</h2><img src="https://picsum.photos/900/300?img=90" alt="" /> </div>
+    <div><h2>Lorem ipsum.</h2> <img src="https://picsum.photos/900/300?img=99" alt="" /> </div>
+    <div><h2>Lorem ipsum dolor sit.</h2> <img src="https://picsum.photos/900/300?img=919" alt="" /></div>
+    <div><h2>Lorem ipsum dolor sit amet, consectetur.</h2> <img src="https://picsum.photos/900/300?img=9109" alt="" /></div>
+
+  </div>
+
+
+<!-- owl / carousel -->
+<!-- slick / carousel -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+      <!-- mai intii conectam jQuary -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+
+  <script>
+  $(document).ready(function(){
+$(".owl-carousel").owlCarousel(
+  ({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true,
+            dots:true
+        },
+        900:{
+            items:2,
+            nav:true,
+            dots:true
+        },
+        1800:{
+            items:3,
+            nav:true,
+            dots:true
+        }
+    }
+})
+);
+});
+  </script>
+
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('.sl-carousel').slick({
+      autoplay:true,
+      infinite:true,
+      slidesToShow:3,
+      slidesToShow:3
+    });
+  });
+</script>
+
+</body>
+</html>
