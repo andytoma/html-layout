@@ -21,6 +21,12 @@ h1{
 font-size: 54px;
 line-height: 1em;
 }
+h2{
+  padding-top: 20px;
+  font-size: 20px;
+  line-height: 25px;
+  padding-right: 50px;
+}
 
 .text-marker{
 border-bottom: 0.2em solid #3452ff;
@@ -30,11 +36,41 @@ display: inline-block;
 
 .border-blue{
   border: 1px solid #3452ff;
+  width: 600px;
+  padding: 50px;
+}
+button{
+  background-color: #3452FF;
+  border: 1px solid #3452FF;
+  border-radius: 5px;
+  padding: 15px;
+  color: white;
+  margin: 10px;
+  width: 120px;
+  transition: 0.4s;
+}
+button:hover{
+  box-shadow: 0 14px 18px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: scaleY(10px);
 }
 
 .form-element input, .form-element select{
   border: 1px solid #999;
   padding: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+h3{
+  font-size: 32px;
+  color: #000000;
+  line-height: 57px;
+  text-align: left;
+}
+h3+p{
+  color: #000000;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 form{
